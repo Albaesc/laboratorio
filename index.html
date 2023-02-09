@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de inscripción</title>
+    <link rel="stylesheet" type="text/css" href=./style.css>
+</head>
+<body>
+    <div class="container">
+        <form id="form" action="#">
+            <h1>Create Account</h1>
+            <div class="input-control">
+                <label for="nombre" class="input_label">Nombre</label>
+                <input type="text" id="nombre" name="nombre" pattern="^[a-zA-Z\s]{2,254}">
+                <i class="validacion_estado">
+                    <img src="images/error-icon.svg">
+                </i>
+                <i class="validacion_estado2">
+                    <img src="images/success-icon.svg">
+                </i>
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email" class="input_label">Email</label>
+                <input type="text" id="email" name="email">
+                <i class="validacion_estado">
+                    <img src="images/error-icon.svg">
+                </i>
+                <i class="validacion_estado2">
+                    <img src="images/success-icon.svg">
+                </i>
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="contraseña" class="input_label">Clave</label>
+                <input type="password" id="contraseña" name="contraseña">
+                <i class="validacion_estado">
+                    <img src="images/error-icon.svg">
+                </i>
+                <i class="validacion_estado2">
+                    <img src="images/success-icon.svg">
+                </i>
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="contraseña2" class="input_label">Confirme su clave</label>
+                <input type="password" id="contraseña2" name="contraseña2">
+                <i class="validacion_estado">
+                    <img src="images/error-icon.svg">
+                </i>
+                <i class="validacion_estado2">
+                    <img src="images/success-icon.svg">
+                </i>
+                <div class="error"></div>
+            </div>
+            <div class="boton">
+            <button type="submit" class="boton">ENVIAR</button>
+            <p class="mensajeExito" id="mensajeExito">Se ha realizado correctamente la inscripción</p>
+            </div>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
